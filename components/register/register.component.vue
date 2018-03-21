@@ -10,10 +10,12 @@
                         </div>
                         <div class="col-md-4 col-md-push-2">
                             <p class="text-center">
-                                <strong>Login</strong>
+                                <strong>Create New User</strong>
                             </p>
-                            <form role="form" @submit.prevent="login()">
-
+                            <form role="form" @submit.prevent="signup()">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your name" required v-model="user.name">
+                                </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control" placeholder="Your Email" required v-model="user.email">
                                 </div>

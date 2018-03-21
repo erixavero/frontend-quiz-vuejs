@@ -22,9 +22,6 @@ export default {
               res => {
                         this.users.push(Operator.single(UserModel, res.body.data));
                         this.user = Operator.reset(UserModel);
-                        localStorage.setItem('token', res.body.data.token);
-                        //alert(localStorage.getItem('token'));
-
                     },
             )
             .catch(

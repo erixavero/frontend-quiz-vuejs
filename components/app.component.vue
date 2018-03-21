@@ -7,7 +7,16 @@
         </div>
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <router-link to="/user">User</router-link>
+            <router-link to="/user">signin</router-link>
+          </li>
+          <li>
+            <router-link to="/register">signup</router-link>
+          </li>
+          <li>
+            <router-link to="/item">items</router-link>
+          </li>
+          <li>
+            <router-link to="/cat">categories</router-link>
           </li>
         </ul>
       </div>
